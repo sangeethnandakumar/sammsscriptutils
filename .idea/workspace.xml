@@ -2,25 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a33048-1c77-4265-a3e6-5fe19809074d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/codeblock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/navbar.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/pagetitle.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/textblock.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utilcard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/addsignature.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/altercolumn.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dynamicdropdown.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/dynamicscripts.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/utilcard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/utilcard.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/addsignature.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/addsignature.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dynamicscripts.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dynamicscripts.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,6 +85,7 @@
       <updated>1566654242003</updated>
       <workItem from="1566654245544" duration="35076000" />
       <workItem from="1567341629688" duration="9254000" />
+      <workItem from="1567437170497" duration="5860000" />
     </task>
     <servers />
   </component>

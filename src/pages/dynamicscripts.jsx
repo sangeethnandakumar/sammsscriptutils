@@ -78,25 +78,14 @@ VALUES ('Admission', `+ order +`, '`+ form +`', 'dynamicfrom', 'Index', 1, 'Admi
     };
 
     GenerateDataTableScript(form, formtemplateid, order) {
+        let today = new Date().toLocaleDateString();
         let result = `-- SQL Script for adding datatable entry
 -- Created: `+ this.GetTimeStamp() + ` 
 
-IF NOT EXISTS (SELECT * FROM  IntakeIntakeFormsMenu WHERE SubmenuName = '`+ form +`' AND [Name] ='Admission') 
-INSERT INTO IntakeIntakeFormsMenu (
-[Name],
-SubmenuID,
-SubmenuName,
-Controller,
-[Action],
-IsActive,
-UpdatedBy,
-CreatedBy,
-FormTemplateId,
-ProgramName,
-SiteId,
-IsStartupForm,
-PacketTypeID )
-VALUES ('Admission', `+ order +`, '`+ form +`', 'dynamicfrom', 'Index', 1, 'Admin', 'Admin', '`+ formtemplateid +`', null, null, null, 1)`;
+IF NOT EXISTS (SELECT * from [tblDataForms] where [FormName] = N'`+ form +`')
+INSERT INTO [dbo].[tblDataForms] ( [FormName], [FormURL], [IsDeleted], [CreatedBy], [CreatedOn], [LastUpdatedBy], [LastUpdatedOn], [IsDataForms])
+VALUES ( N'`+ form +`', N'DynamicFrom/Index/', N'0', N'SAMMS', CAST(N'`+ today +`' AS Date), N'SAMMS', CAST(N'`+ today +`' AS Date), 1)
+GO`;
 
         return(result);
     }

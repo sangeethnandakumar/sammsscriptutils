@@ -78,7 +78,7 @@ class AddSignature extends Component {
     }
 
     GenerateScript() {
-        let today = new Date().toLocaleDateString()
+        let today = new Date().toLocaleDateString();
         let result = `-- SQL Script to add signature field to form
 -- Created: `+ this.GetTimeStamp() + `
 

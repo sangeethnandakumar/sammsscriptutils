@@ -15,7 +15,7 @@ class UtilCard extends Component {
 
     render() {
         return(
-            <Link to={this.props.Route}>
+            <Link to={this.props.Route} style={{  textDecoration: 'none'}}>
                 <Card>
                     <CardActionArea>
                         <CardContent>

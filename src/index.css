@@ -19,3 +19,8 @@ code {
 .codeblock {
   text-align: left;
 }
+
+.dev {
+  font-size: 12px;
+  display: inline;
+}

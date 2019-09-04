@@ -1,32 +1,41 @@
-import React, {Component} from 'react';
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
+import Button from '@material-ui/core/Button';
+import Link from "react-router-dom/es/Link";
 
-const data = {
-    appName: "Script Utils",
-    appVersion: "1.0",
-    appDeveloper: "Sangeeth Nandakumar"
+const useStyles = makeStyles(theme => ({
+    root: {
+        flexGrow: 1,
+    },
+    menuButton: {
+        marginRight: theme.spacing(2),
+    },
+    title: {
+        flexGrow: 1,
+    },
+}));
+
+export default function NavBar() {
+    const classes = useStyles();
+
+    return (
+        <div className={classes.root}>
+            <AppBar position="static">
+                <Toolbar>
+                    <Link to={"/"} exact style={{ textDecoration: 'none', color: 'white' }}>
+                        <Button color="inherit">HOME PAGE</Button>
+                    </Link>
+                    <Typography variant="h6" className={classes.title}>
+                        Script Utils <div className={"dev"}>By Sangeeth Nandakumar</div>
+                    </Typography>
+                    <Link to={"/"} exact style={{ textDecoration: 'none', color: 'white' }}>
+                        <Button color="inherit">HOME PAGE</Button>
+                    </Link>
+                </Toolbar>
+            </AppBar>
+        </div>
+    );
 }
-
-class NavBar extends Component {
-
-    render() {
-        return(
-            <div>
-                <AppBar position="static">
-                    <Toolbar>
-                        <Typography variant="h6">
-                            {data.appName} v{data.appVersion} |
-                            <Typography variant="caption" display="inline" gutterBottom>
-                                &nbsp;&nbsp;Developed By: {data.appDeveloper}
-                            </Typography>
-                        </Typography>
-                    </Toolbar>
-                </AppBar>
-            </div>
-        );
-    }
-}
-
-export default NavBar;
